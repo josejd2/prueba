@@ -4,10 +4,11 @@ y el script mostrará como resultado el valor medio de los tres.
 
 Recuerda que la media de tres números se calcula sumando los tres y dividiendo entre 3.
 */
-
-let numero1 = Number(prompt("Teclee 1 numero entero: "));
-let numero2 = Number(prompt("Teclee otro numero entero: "));
-let numero3 = Number(prompt("Teclee otr numero entero: "));
-
-let media = numero1 + numero2 + numero3 / 3;
+// Pedimos los tres números:
+let num1 = Number(prompt("Introduce primer número:"));
+let num2 = Number(prompt("Introduce segundo número:"));
+let num3 = Number(prompt("Introduce tercer número:"));
+// Calculamos la media:
+let media = (num1 + num2 + num3) / 3;
+// Añadimos texto (append) con el valor de la variable media:
 document.getElementById("media").innerText += media;
