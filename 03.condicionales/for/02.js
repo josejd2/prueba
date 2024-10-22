@@ -1,20 +1,16 @@
-function cuentaAtras(numero) {
-    let resultado = '';
-    
-    for (let i = numero; i >= 0; i--) {
-        resultado += i; // Agrega el número actual a la cadena
-        if (i > 0) {
-            resultado += ', '; // Añade una coma solo si no es el último número
-        }
+// Solicitar un valor entero al usuario
+let num = parseInt(prompt("Introduce un valor entero:"));
+
+// Inicializar una cadena para almacenar el resultado
+let resultado = "";
+
+// Usar un bucle for para concatenar los números desde 0 hasta el valor ingresado
+for (let i = num; i >= 1; i--) {
+    resultado += i; // Agrega el número actual a la cadena
+    if (i > 1) {
+        resultado += ', '; // Añade una coma solo si no es el último número
     }
-    
-    return resultado;
 }
 
-// Ejemplo de uso
-let numeroTeclado = parseInt(prompt("Introduce un número entero:"));
-if (!isNaN(numeroTeclado) && numeroTeclado >= 0) {
-    console.log(cuentaAtras(numeroTeclado));
-} else {
-    console.log("Por favor, introduce un número entero válido.");
-}
+// Mostrar el resultado
+console.log(resultado);
